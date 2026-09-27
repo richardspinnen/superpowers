@@ -66,14 +66,14 @@ All tables live in Supabase Postgres (EU/Frankfurt region). PostGIS enabled.
   family-friendly, solo, special occasion, quick bite, live music.
 
 **`recommendations`**
-- `id`, `user_id` (→ profiles), `place_id` (→ places), `note` (text,
-  ≤ 500 chars, optional), `created_at`, `updated_at`.
+- `id`, `user_id` (→ profiles), `place_id` (→ places), `tags` (text[] of tag
+  slugs), `note` (text, ≤ 500 chars, optional), `created_at`, `updated_at`.
 - Unique `(user_id, place_id)`: one recommendation per user per place,
   editable.
-
-**`recommendation_tags`**
-- `(recommendation_id, tag_slug)` pk. Constraint (trigger): 1–3 tags per
-  recommendation; tag must be `active`.
+- `tags`: 1–3 entries (check constraint); a trigger rejects unknown,
+  inactive or duplicate slugs. Stored as an array (GIN-indexed) rather than
+  a join table so a recommendation and its tags are always written
+  atomically.
 
 **`reports`**
 - `id`, `reporter_id`, `target_type` (`profile` | `recommendation`),
@@ -88,8 +88,10 @@ Privacy is enforced in the database, not in application code.
   requester has an `accepted` follow of the author.
 - Profile basics (username, display name, avatar, is_private, counts) are
   readable by everyone, so private profiles can be found and requested.
-- `follows` rows are readable by the two parties; accepted follows of public
-  profiles are readable by everyone (for follower/following lists).
+- `follows` rows are readable by the two parties; accepted follows where
+  **both** profiles are public are readable by everyone (for
+  follower/following lists). Follower/following counts are public for all
+  profiles via a function.
 - Users may only insert/update/delete their own recommendations, their own
   outgoing follows, and approve/reject follows targeting themselves.
 
@@ -101,6 +103,7 @@ Implemented as a single Postgres function
 
 1. Candidate authors: `following` → accepted followees of the caller;
    `everyone` → all public profiles plus the caller's accepted followees.
+   The caller's own recommendations are never included.
 2. Their recommendations carrying `tag_slug`.
 3. Join places within `radius_m` of `(lat, lng)`, excluding `is_closed`.
 4. Group by place. Return place fields, distance, recommender count, up to
