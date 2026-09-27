@@ -96,6 +96,25 @@ planned unless marked.
   - Order: invitations, First to spot and quiet impact with the circle-feed
     plan; levels and Wallet in Plan 4; recap and digest after.
 
+## What makes it superb (2026-09-28)
+
+Priority for the first 20 testers: 1, 2 and the spot-page redesign.
+
+1. **Content before launch**: 5–10 Düsseldorf tastemakers spot ~200 great
+   places before the first invitation; no empty club on day one.
+2. **Onboarding against the empty circle**: starter circle of tastemakers
+   (removable); "Spot your 3 favourite places" in ~60 seconds.
+3. **Final name, logo and domain** before going live.
+4. **Native feel**: installable PWA (icon, splash), instant transitions,
+   subtle animation, loading skeletons; App Store app later for credibility.
+5. **Beautiful share cards** (WhatsApp, Instagram Stories) for spots and
+   profiles: black/white, name, Known for, "Spotted by".
+6. **"Ask the circle"**: ask your circle a question ("Birthday dinner for 8
+   on Saturday?"), members answer with a spot; no open comments.
+7. **Care in details**: "Open now / closes in 40 min", reservation link,
+   native German copy, an empty state on every screen.
+8. **Trust as brand**: no ads, no data selling, EU hosting, clear privacy page.
+
 ## Ideas inbox
 
 <!-- New ideas from the product owner land here first. -->
