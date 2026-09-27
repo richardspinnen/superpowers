@@ -198,3 +198,53 @@ Test-driven development throughout.
 - Launch city (affects autocomplete bias default and seed curators).
 - Where the code will live: a new dedicated repository (this spec will move
   there).
+
+## 10. Product decisions from the mockup review (2026-09-27)
+
+Agreed with the product owner while reviewing the clickable mockup, after
+Plan 1 (database core) was written. The database names from §2 stay as they
+are; these decisions shape the UI and later plans.
+
+**Positioning and look.** The app should feel like a private members' club,
+expressed through restraint rather than ornament: black, white and greys only,
+one sans-serif typeface (Geist), thin dividers, lots of white space, one primary
+action per screen. Light and dark themes, following the device setting.
+
+**Wording** (UI only; data model names unchanged):
+
+| Concept (data model) | English UI | German UI |
+|---|---|---|
+| follow (accepted) | add to circle / "My circle" | "In den Kreis" / "Mein Kreis" |
+| follow request to a private profile | "Request introduction" | "Vorstellung anfragen" |
+| recommendation (noun / verb) | "spot" / "Spot this place", "Spotted by" | "Spot" / "Als Spot markieren", "Entdeckt von" |
+| Discover scope `everyone` | "All members" | "Alle Mitglieder" |
+| profile share link | "Your invitation" | "Deine Einladung" |
+| Discover tab | "Tonight" | "Heute" |
+
+"gespottet" is avoided in German (*spotten* means "to mock").
+
+**Navigation.** Three tabs: Tonight · Spot · Members. The profile opens from
+the user's avatar in the top-right corner. Language and privacy settings live
+on the profile.
+
+**Membership levels** (earned, not purchasable for now):
+
+| Level | Requirement | Ring / card |
+|---|---|---|
+| Graphite | on joining | dark grey |
+| Silver | 10 spots | brushed silver |
+| Gold | 40 spots and 25 members have the user in their circle | champagne gold |
+| Black | by invitation only (granted by the app owner) | black |
+
+Shown as the colour of the ring around the user's avatar and as the material of
+the membership card. Needs a later plan: level computation, a stored flag for
+Black, and level-up rules.
+
+**Membership card and Wallet pass.** Each member has a card showing name,
+member number, member-since date and level, with a QR code that opens their
+profile (so others can add them to their circle or request an introduction).
+"Add to Wallet" creates an Apple Wallet pass and a Google Wallet pass. Requires
+a Pass Type ID certificate from the Apple Developer account and a Google Wallet
+issuer account; passes are generated and signed server-side. Later plan.
+
+**Launch city.** Düsseldorf.
