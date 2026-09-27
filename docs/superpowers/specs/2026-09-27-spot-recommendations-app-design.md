@@ -219,7 +219,7 @@ action per screen. Light and dark themes, following the device setting.
 | recommendation (noun / verb) | "spot" / "Spot this place", "Spotted by" | "Spot" / "Als Spot markieren", "Entdeckt von" |
 | Discover scope `everyone` | "All members" | "Alle Mitglieder" |
 | profile share link | "Your invitation" | "Deine Einladung" |
-| Discover tab | "Tonight" | "Heute" |
+| Discover tab | "Now" | "Jetzt" |
 
 "gespottet" is avoided in German (*spotten* means "to mock").
 
@@ -248,3 +248,27 @@ a Pass Type ID certificate from the Apple Developer account and a Google Wallet
 issuer account; passes are generated and signed server-side. Later plan.
 
 **Launch city.** Düsseldorf.
+
+**Time-aware home screen.** The Discover headline and the pre-selected mood
+follow the member's local time; the mood chips are reordered so fitting moods
+come first:
+
+| Local time | Headline (EN / DE) | Pre-selected mood |
+|---|---|---|
+| 05:00–11:00 and 15:00–17:00 | "Time for coffee?" / "Zeit für Kaffee?" | Coffee |
+| 11:00–15:00 | "Where for lunch?" / "Wohin zum Mittagessen?" | Quick bite |
+| 17:00–21:00 | "Where for dinner?" / "Wohin zum Abendessen?" | Date night |
+| 21:00–01:00 | "One more drink?" / "Noch einen Drink?" | Cocktails |
+| 01:00–05:00 | "Still dancing?" / "Noch tanzen?" | Club night |
+
+This adds two moods to the seeded tag list (a data migration in a later plan):
+`coffee` (Coffee / Kaffee) and `club-night` (Club night / Clubnacht).
+
+**Notes for later plans (from the Plan 1 final review).** Account deletion is a
+server route using the service role. Reports are inserted with
+`returning=minimal` (no SELECT policy). `avatar_url` must be set server-side or
+restricted to trusted image hosts. Places are closed, never deleted (deleting a
+place cascades to members' spots). Coordinates are validated before calling
+`discover`, and `invalid_scope` / `invalid_radius` / `invalid_page` map to
+localized messages. The Wallet-pass QR code encodes the member's id, not the
+username (usernames can change).
