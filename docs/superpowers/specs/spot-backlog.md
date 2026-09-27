@@ -81,8 +81,7 @@ planned unless marked.
     new neighbourhood ("First spot in Pempelfort"). Later: each city is a
     passport page (bridge to travel). Data: Düsseldorf boundaries from city
     open data / OpenStreetMap (credit the source) in PostGIS, place →
-    neighbourhood by point-in-polygon. Open decision: 10 Stadtbezirke vs
-    ~50 Stadtteile (recommended: Stadtteile).
+    neighbourhood by point-in-polygon. Decided: ~50 Stadtteile (owner, 2026-09-28).
   - Later: real partner perks per level (e.g. welcome drink for Gold).
   - Not: points, public leaderboards, streaks, daily pushes.
   - Order: invitations, First to spot and quiet impact with the circle-feed
