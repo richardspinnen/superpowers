@@ -164,10 +164,16 @@ VSCO for profiles, feed and the overall feel.
 - Even more white space, small quiet labels, photos carry the page.
 - Membership model like VSCO: free core, paid membership for extras
   (Wallet card, recaps, travel, more invitations).
-- **Open decision (recommended yes): member photos become core** — one
-  optional own photo per spot, Google photo as fallback. Needs storage,
-  resizing and a simple moderation check. Without it every profile grid shows
-  the same Google pictures.
+- **Decided (owner): members MUST add their own photo to every spot.**
+  Proposed rules: 1–3 own photos per spot, first is the gallery cover; no
+  Google photo as a substitute on profiles (Google photos stay as background
+  on the spot page); onboarding exception — favourites can be spotted now and
+  get their photo within 7 days (visible only to the member until then);
+  guidelines: place / dish / drink / view, no strangers' faces (privacy);
+  uploads resized, GPS metadata stripped, moderation check. Tastemakers need
+  photos for the ~200 launch spots. Tech: Supabase Storage (EU), resizing,
+  EXIF removal, moderation → its own plan. Open decision: camera roll
+  allowed (recommended) or live in-app camera only.
 
 ## Ideas inbox
 
