@@ -219,6 +219,25 @@ showcase their finds — Spot as "link in bio" for people with taste.
 - Backups: Salon, Tavola, Palate; invented words (Myse, Spota, Voya) are
   easier to own.
 
+## Partner perks with the Wallet card (2026-09-28)
+
+Owner goal: showing the membership / Wallet card at partner venues earns a
+reward (e.g. a free aperitif).
+
+- Member: partner spot pages show a quiet note ("Members' perk: a welcome
+  aperitif"); Apple Wallet pass relevant locations make the card appear on
+  the lock screen near a partner; perks by level (Graphite aperitif, Gold
+  + best table, Black chef's surprise).
+- Venue: staff scan the card's QR → simple page "Valid member · Gold ·
+  Perk · Redeem"; one tap redeems (limit per visit/month); rotating/dynamic
+  QR so photos of cards don't work.
+- Why venues join: curated, connected guests who post and bring friends; a
+  €2–3 aperitif for a €100+ table; later a small partner dashboard.
+- Business model later: free at first; then paid visibility or a fee per
+  redeemed perk, or perks justify a paid membership.
+- Depends on the Wallet card (Plan 4); pilot with 3–5 Oberkassel venues
+  during the 20-member test.
+
 ## Ideas inbox
 
 <!-- New ideas from the product owner land here first. -->
