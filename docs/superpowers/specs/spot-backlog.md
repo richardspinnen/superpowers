@@ -109,8 +109,14 @@ Priority for the first 20 testers: 1, 2 and the spot-page redesign.
    subtle animation, loading skeletons; App Store app later for credibility.
 5. **Beautiful share cards** (WhatsApp, Instagram Stories) for spots and
    profiles: black/white, name, Known for, "Spotted by".
-6. **"Ask the circle"**: ask your circle a question ("Birthday dinner for 8
-   on Saturday?"), members answer with a spot; no open comments.
+6. **"Ask the circle"** — **owner favourite, candidate signature feature.**
+   Ask a short question with optional moods, date, party size, area; members
+   answer only with a spot plus one sentence (no open comments); the asker
+   closes the loop ("We went to Da Enzo") → quiet impact for the answerer
+   ("Richard went because of you"); questions expire after the date or 48 h;
+   shown in the circle feed. Feeds badges (Host, Trusted). Open decision:
+   audience — circle by default, optional "Ask all members" when the circle
+   is small.
 7. **Care in details**: "Open now / closes in 40 min", reservation link,
    native German copy, an empty state on every screen.
 8. **Trust as brand**: no ads, no data selling, EU hosting, clear privacy page.
