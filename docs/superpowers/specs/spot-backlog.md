@@ -194,6 +194,23 @@ showcase their finds — Spot as "link in bio" for people with taste.
   photos, no notes), then "See all of Richard's spots — members only";
   full profiles require membership.
 
+## Name (2026-09-28)
+
+- Criteria: one short word, easy in DE/EN, about places + belonging,
+  ownable (domain, Instagram, trademark). Bio-friendly short domain (.co or
+  .club; .co preferred if the name itself says enough).
+- **Favourite candidate (owner): "mise."** — from *mise en place*
+  ("everything in its place"); chef/bartender insider code; logo "mise." on
+  the black card. Tagline idea: "mise. Everything in its place." /
+  "Alles an seinem Platz."
+  - Risk: pronounced like German "mies" (= lousy). Mitigation: always written
+    "mise." with the dot, tagline, insider launch audience. **Test**: ask 3–5
+    Germans from the target group "Bist du schon auf mise?" unexplained.
+  - Check: mise.co / mise.club / mise.app / joinmise.com (price incl.
+    renewal), Instagram @mise / @mise.club / @joinmise, trademark EUIPO + DPMA
+    classes 9 (apps) and 43 (restaurant services).
+- Other shortlisted: Haunt, Coterie, Spood, Stamm, Salon, Palate, Kiez.
+
 ## Ideas inbox
 
 <!-- New ideas from the product owner land here first. -->
