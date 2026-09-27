@@ -190,8 +190,9 @@ showcase their finds — Spot as "link in bio" for people with taste.
 - Link preview image (name, cover photo, "12 spots in Düsseldorf").
 - Private profiles: name, photo, "shared by introduction" only.
 - Needs a short domain (bio-friendly) → name/domain decision matters more.
-- Open decision: visitors see everything or a teaser (recommended: first 6
-  spots, then "See all — members only").
+- Decided (owner): visitors see a preview only (e.g. first 6 spots with
+  photos, no notes), then "See all of Richard's spots — members only";
+  full profiles require membership.
 
 ## Ideas inbox
 
