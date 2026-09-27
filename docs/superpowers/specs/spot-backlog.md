@@ -38,6 +38,22 @@ planned unless marked.
 - Map view.
 - Report emails to the owner.
 
+## Positioning (2026-09-28)
+
+- USP: *Only the people you trust, for exactly this moment.* Trust instead of
+  stars; moment-first home screen; "Known for" says what to order; members'
+  club feel.
+- Closest competitor: Beli (social ranking, US-focused). Difference: Beli is a
+  game for people who rank restaurants; Spot is a quiet, premium club for
+  people others ask where to go. Owner's take: "Beli looks so uncool" — design
+  and brand are part of the product.
+- First members: tastemakers (chefs, bartenders, designers, creatives, boutique
+  owners) in Düsseldorf.
+- Validation test: 20 invited members, 2–3 weeks; ≥5 spots each, come back on
+  their own, willing to pay for a founding membership.
+- Later: travel — "your circle's spots in Lisbon" as a premium feature.
+- Homework: owner tries Beli for 10 minutes and notes likes / dislikes.
+
 ## Ideas inbox
 
 <!-- New ideas from the product owner land here first. -->
