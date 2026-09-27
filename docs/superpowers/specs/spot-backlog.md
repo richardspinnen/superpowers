@@ -120,6 +120,19 @@ Priority for the first 20 testers: 1, 2 and the spot-page redesign.
 7. **Care in details**: "Open now / closes in 40 min", reservation link,
    native German copy, an empty state on every screen.
 8. **Trust as brand**: no ads, no data selling, EU hosting, clear privacy page.
+9. **Instagram connection** (owner: "there needs to be a certain connection").
+   Meta closed most of the API: no "Sign in with Instagram", no importing
+   saved posts. What works:
+   - "Share to Story" card for spots and profiles via the phone share sheet
+     (with the share cards, item 5).
+   - Member's @handle on the profile (trust; gives tastemakers followers).
+   - Place's Instagram as a button on the spot page next to Website / Call /
+     Directions; added by the first spotter or taken from the website.
+   - Monthly / yearly recap designed as a Story.
+   - Invitation links with a proper preview image for DMs.
+   - Not: auto-posting to Instagram, embedded Instagram feeds.
+   - Order: handle + place Instagram with the spot-page redesign; Story
+     cards with share cards; recap later.
 
 ## Ideas inbox
 
