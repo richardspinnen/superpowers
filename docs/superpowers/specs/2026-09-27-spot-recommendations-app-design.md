@@ -272,3 +272,12 @@ place cascades to members' spots). Coordinates are validated before calling
 `discover`, and `invalid_scope` / `invalid_radius` / `invalid_page` map to
 localized messages. The Wallet-pass QR code encodes the member's id, not the
 username (usernames can change).
+
+**"Known for" (Bekannt für).** Members can say what a place is known for
+(e.g. "Truffle pasta") while spotting it — optional, up to 2 entries per
+member per place, 1–40 characters. Autocomplete offers the entries other
+members already added for that place, so agreement is counted instead of
+duplicated ("Truffle pasta · 5 members"). The spot page lists all entries by
+count; Discover rows show the top entry instead of the place type. Separate
+from the mood tags. Data: a new table (place_id, user_id, label) with the same
+visibility rules as recommendations; later plan. Future: search by dish.
