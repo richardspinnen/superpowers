@@ -209,7 +209,15 @@ showcase their finds — Spot as "link in bio" for people with taste.
   - Check: mise.co / mise.club / mise.app / joinmise.com (price incl.
     renewal), Instagram @mise / @mise.club / @joinmise, trademark EUIPO + DPMA
     classes 9 (apps) and 43 (restaurant services).
-- Other shortlisted: Haunt, Coterie, Spood, Stamm, Salon, Palate, Kiez.
+- **Collision found (owner, 2026-09-28):** mise.co is taken by "Mise — a
+  mobile app connecting you to people and events nearby" (pre-launch page,
+  early access on Google Play, no HTTPS — possibly abandoned). Similar
+  category → confusion and trademark risk. Next: EUIPO/DPMA search "Mise",
+  class 9; if an active app registration exists, drop mise.
+- Name must be international (owner). Rejected: Haunt, Zirkel, Cercle (known
+  electronic-music brand), CIRCL (dated, typo risk, existing CIRCL), MEEZ.
+- Backups: Salon, Tavola, Palate; invented words (Myse, Spota, Voya) are
+  easier to own.
 
 ## Ideas inbox
 
