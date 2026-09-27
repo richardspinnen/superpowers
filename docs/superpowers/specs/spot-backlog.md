@@ -134,6 +134,22 @@ Priority for the first 20 testers: 1, 2 and the spot-page redesign.
    - Order: handle + place Instagram with the spot-page redesign; Story
      cards with share cards; recap later.
 
+## Recaps — owner favourite (2026-09-28)
+
+- **Monthly "Your October in spots"**: swipeable story-sized cards
+  (black/white): new spots; new neighbourhoods with the map filling in;
+  "Your taste this month" from moods; Known-for by you; quiet impact
+  ("4 members went because of you"); First to spot. Hint in the app on the
+  1st, also in the weekly email.
+- **Yearly "Your 2026 in spots"** (Wrapped-style): numbers ("23 of 50
+  neighbourhoods"), place of the year, distinctions earned, taste profile
+  line, final card "Share your year" for Instagram Stories.
+- Rules: only the member's own data; sharing always opt-in; no comparisons
+  with others; small spot. logo doubles as invitation.
+- Tech: images rendered server-side with Next.js's built-in image
+  generation (no new dependency). Needs neighbourhoods and quiet impact
+  first → after the social plan.
+
 ## Ideas inbox
 
 <!-- New ideas from the product owner land here first. -->
