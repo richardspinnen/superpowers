@@ -175,6 +175,24 @@ VSCO for profiles, feed and the overall feel.
   EXIF removal, moderation → its own plan. Decided (owner): camera roll
   allowed, as well as the in-app camera.
 
+## Profile link in Instagram bios (2026-09-28)
+
+Owner: members put `spotdomain.co/profilename` in their Instagram bio to
+showcase their finds — Spot as "link in bio" for people with taste.
+
+- Today: profiles already work at `/@username`, visible signed out with a
+  join prompt. Add top-level `/username` too (both lead to the same profile);
+  app routes are protected via reserved usernames (keep the list complete
+  when adding routes).
+- Public profile for visitors as a VSCO-style gallery (photos, Known-for,
+  neighbourhood map, distinctions); at the bottom "Spot is members only.
+  Request an invitation." → waiting list.
+- Link preview image (name, cover photo, "12 spots in Düsseldorf").
+- Private profiles: name, photo, "shared by introduction" only.
+- Needs a short domain (bio-friendly) → name/domain decision matters more.
+- Open decision: visitors see everything or a teaser (recommended: first 6
+  spots, then "See all — members only").
+
 ## Ideas inbox
 
 <!-- New ideas from the product owner land here first. -->
