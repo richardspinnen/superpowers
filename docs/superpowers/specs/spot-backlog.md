@@ -65,6 +65,20 @@ planned unless marked.
     comments/chat (noise, moderation), posting pressure.
   - Proposed order: after the spot-page redesign, circle feed + Want to go
     come before Plan 4 (levels, Wallet).
+- **Gamification (owner: needed for growth and retention)** — status, not
+  points (Amex, not Duolingo):
+  - Growth: limited invitations as a reward (e.g. 3 on joining; Silver 5,
+    Gold 10, Black unlimited); Wallet card as a status symbol; "Invited by
+    Anna" on profiles.
+  - Retention: levels as moments ("You're now Silver"); "First to spot" —
+    "Discovered by Richard" on the spot page permanently; quiet impact shown
+    only to the member ("7 members went because of you"); neighbourhood
+    collection ("4 of 10 districts"); monthly recap and a shareable year
+    recap; weekly email digest of the circle's new spots.
+  - Later: real partner perks per level (e.g. welcome drink for Gold).
+  - Not: points, public leaderboards, streaks, daily pushes.
+  - Order: invitations, First to spot and quiet impact with the circle-feed
+    plan; levels and Wallet in Plan 4; recap and digest after.
 
 ## Ideas inbox
 
