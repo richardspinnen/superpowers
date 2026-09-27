@@ -172,8 +172,8 @@ VSCO for profiles, feed and the overall feel.
   guidelines: place / dish / drink / view, no strangers' faces (privacy);
   uploads resized, GPS metadata stripped, moderation check. Tastemakers need
   photos for the ~200 launch spots. Tech: Supabase Storage (EU), resizing,
-  EXIF removal, moderation → its own plan. Open decision: camera roll
-  allowed (recommended) or live in-app camera only.
+  EXIF removal, moderation → its own plan. Decided (owner): camera roll
+  allowed, as well as the in-app camera.
 
 ## Ideas inbox
 
