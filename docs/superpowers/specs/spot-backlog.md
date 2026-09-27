@@ -75,6 +75,14 @@ planned unless marked.
     only to the member ("7 members went because of you"); neighbourhood
     collection ("4 of 10 districts"); monthly recap and a shareable year
     recap; weekly email digest of the circle's new spots.
+  - **Owner favourite: neighbourhood collection.** Minimal Düsseldorf map on
+    the profile, neighbourhoods fill in when spotted ("12 of 50
+    neighbourhoods"); tap for spots there; quiet moment on a first spot in a
+    new neighbourhood ("First spot in Pempelfort"). Later: each city is a
+    passport page (bridge to travel). Data: Düsseldorf boundaries from city
+    open data / OpenStreetMap (credit the source) in PostGIS, place →
+    neighbourhood by point-in-polygon. Open decision: 10 Stadtbezirke vs
+    ~50 Stadtteile (recommended: Stadtteile).
   - Later: real partner perks per level (e.g. welcome drink for Gold).
   - Not: points, public leaderboards, streaks, daily pushes.
   - Order: invitations, First to spot and quiet impact with the circle-feed
