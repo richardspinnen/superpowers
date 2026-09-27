@@ -73,7 +73,7 @@ planned unless marked.
   - Retention: levels as moments ("You're now Silver"); "First to spot" —
     "Discovered by Richard" on the spot page permanently; quiet impact shown
     only to the member ("7 members went because of you"); neighbourhood
-    collection ("4 of 10 districts"); monthly recap and a shareable year
+    collection ("12 of 50 neighbourhoods"); monthly recap and a shareable year
     recap; weekly email digest of the circle's new spots.
   - **Owner favourite: neighbourhood collection.** Minimal Düsseldorf map on
     the profile, neighbourhoods fill in when spotted ("12 of 50
@@ -82,6 +82,15 @@ planned unless marked.
     passport page (bridge to travel). Data: Düsseldorf boundaries from city
     open data / OpenStreetMap (credit the source) in PostGIS, place →
     neighbourhood by point-in-polygon. Decided: ~50 Stadtteile (owner, 2026-09-28).
+  - **Profile badges ("Distinctions")** (owner idea): few, earned,
+    monochrome line marks; member shows up to 3 on the profile, the rest in a
+    Distinctions section; no numbers or progress bars. Candidates: Founding
+    Member (first 100, never again), Discoverer (first to spot 5 places),
+    "<Neighbourhood> Local" (10 spots in one Stadtteil), Düsseldorf Complete
+    (all ~50), Trusted (25 members went because of you), Night Owl (10 late
+    night / club night spots), Wine / Cocktails / Coffee Connoisseur (10 spots
+    in a mood with Known-for others agreed with), Host (invited 5 members who
+    became active). Builds on neighbourhoods and First to spot.
   - Later: real partner perks per level (e.g. welcome drink for Gold).
   - Not: points, public leaderboards, streaks, daily pushes.
   - Order: invitations, First to spot and quiet impact with the circle-feed
