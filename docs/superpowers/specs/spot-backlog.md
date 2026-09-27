@@ -53,6 +53,18 @@ planned unless marked.
   their own, willing to pay for a founding membership.
 - Later: travel — "your circle's spots in Lisbon" as a premium feature.
 - Homework: owner tries Beli for 10 minutes and notes likes / dislikes.
+- **Product definition (owner): "Spot is a small social network for
+  connoisseurs."** Implications:
+  - Circle feed: quiet timeline of the circle's new spots and notes.
+  - Profiles as a taste portfolio (spots, Known-for, typical moods, level).
+  - "Want to go": save a place from someone's spot, credited to them.
+  - Quiet acknowledgment instead of likes ("Noted" / "Went because of you").
+  - Introductions and private profiles stay central; invite rights as a
+    later privilege (e.g. Black level).
+  - Avoid: public follower counts as headline, leaderboards, streaks,
+    comments/chat (noise, moderation), posting pressure.
+  - Proposed order: after the spot-page redesign, circle feed + Want to go
+    come before Plan 4 (levels, Wallet).
 
 ## Ideas inbox
 
