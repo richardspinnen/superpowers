@@ -150,6 +150,25 @@ Priority for the first 20 testers: 1, 2 and the spot-page redesign.
   generation (no new dependency). Needs neighbourhoods and quiet impact
   first → after the social plan.
 
+## Visual and product reference: VSCO (2026-09-28)
+
+Owner: make Spot "VSCO-like". MICHELIN is the reference for the spot page;
+VSCO for profiles, feed and the overall feel.
+
+- Profile as a gallery: calm grid of the member's spots (photo + small
+  name); neighbourhood map and distinctions quietly above.
+- Circle feed as an image stream: large photo, one line ("Anna · Trattoria
+  Da Enzo · Truffle pasta"); no likes, no counters.
+- No public numbers anywhere (followers, circle size, spot counts); members
+  see their own numbers only (recaps).
+- Even more white space, small quiet labels, photos carry the page.
+- Membership model like VSCO: free core, paid membership for extras
+  (Wallet card, recaps, travel, more invitations).
+- **Open decision (recommended yes): member photos become core** — one
+  optional own photo per spot, Google photo as fallback. Needs storage,
+  resizing and a simple moderation check. Without it every profile grid shows
+  the same Google pictures.
+
 ## Ideas inbox
 
 <!-- New ideas from the product owner land here first. -->
