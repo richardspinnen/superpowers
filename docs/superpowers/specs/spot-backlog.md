@@ -304,6 +304,20 @@ reward (e.g. a free aperitif).
   nothing in restaurants / going out → medium risk, **strongest candidate
   so far**. Next: owner checks EUIPO classes 9 and 43 for UNDR; domains
   undr.club / undr.co.
+- Checks (2026-09-28 afternoon), all taken: **CLUBR** (Indian nightlife
+  discovery + venue platform, Clubr Link reservations from Instagram),
+  **INSIDR** (restaurant–influencer app, talent, music), **GUESTR** (hotel
+  ordering), **MEMBR** (gym software), **SCOUTR** (football/HR), **DINR**
+  (curated reservation app incl. Michelin, Montreal, premium membership —
+  near-competitor), **TABLR** (several restaurant apps), **HOSTR** (party
+  planner, group dining), **NOCTR** (nightlife streetwear, fashion, to-do
+  app), **SIPR** (drinks apps). **UNDR: owner reports it is taken.**
+  Conclusion: "drop the vowel + R" style is exhausted. Next: 15 coined
+  words (no dictionary root, 4–5 letters, strong, easy to say, club vibe),
+  pre-checked, only free ones shown. Owner tool: instantdomainsearch.com.
+- Brand kit artifact (built on working name UNDR, name swap needed):
+  https://claude.ai/artifact/LnkAiCiWpd72cu1KHCL6Rt ; concept screens:
+  https://claude.ai/artifact/4hDLzQoS8Vt7TibTjwpGtD
 - Earlier "quiet club" notes still apply to design (no public likes/counts),
   but the product is more expressive than "quiet".
 
