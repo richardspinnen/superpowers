@@ -286,6 +286,15 @@ reward (e.g. a free aperitif).
   our VSCO idea); **Skeen** — Skeen.io skincare app, FotoFinder skeen
   dermatoscope; **Seeno** — several AI companies. → seen/scene family too
   crowded; drop it. Next: one pre-checked list of ~10 invented names.
+- **Naming brief (2026-09-28 midday).** Likes: VSCO, UNDR, SUPR, sound of
+  ROIA / RAYA, seen/scene, Den, Mise. Dislikes: playful (Spood), video-game
+  (Onyx), generic/obvious (Fresco, Olio, Tuck, domain hacks), hard to
+  pronounce (Scena, Voisin). Needs: short, cool AND niche, international,
+  one clear pronunciation, going-out vibe, ownable. Checked and taken in our
+  space: RAYA (invite-only members app), ROIA (restaurants), Rova (travel
+  journal + "social network where you get seen"), Oria (restaurant site
+  builder, members café, social club). Homework for owner: name 3–5 brands
+  with names they find cool. Next: pre-checked list of ~10 names (evening).
 - Earlier "quiet club" notes still apply to design (no public likes/counts),
   but the product is more expressive than "quiet".
 
