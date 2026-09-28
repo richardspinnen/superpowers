@@ -318,6 +318,15 @@ reward (e.g. a free aperitif).
 - Brand kit artifact (built on working name UNDR, name swap needed):
   https://claude.ai/artifact/LnkAiCiWpd72cu1KHCL6Rt ; concept screens:
   https://claude.ai/artifact/4hDLzQoS8Vt7TibTjwpGtD
+- **Lead name candidate (2026-09-28): PRVE** — as in *privé* (the door of
+  the private room). Spelled PRVE everywhere (no accent: typing, handles,
+  domains, search); tagline "PRVE. As in privé." DNS screen: prve.co,
+  prve.club, prve.app no DNS (probably free), prve.com registered. Web check:
+  only PRVEPA (US electric utility app). To do (owner): confirm and register
+  prve.co (+ prve.club), Instagram @prve / @prve.co, EUIPO classes 9 and 43.
+  Runner-up: VELVR (velvet rope; velvr.co probably free, no brand found).
+  Also checked, taken: VLVT, NSDR, HDDN; VELR (velr.co registered).
+  Mockup: https://claude.ai/artifact/G3NmjkW2RM539jgMFAkHz2
 - Earlier "quiet club" notes still apply to design (no public likes/counts),
   but the product is more expressive than "quiet".
 
