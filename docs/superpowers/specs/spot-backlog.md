@@ -270,6 +270,15 @@ reward (e.g. a free aperitif).
   "Discovered by" gains weight.
 - Name direction from this: SEEN ("see and be seen"), SCENE, SPTD
   ("spotted"), Booked, Plated — top: SEEN, SPTD (availability unchecked).
+- Web check SEEN (2026-09-28): SEEN APP (@seen_app, ~18k Instagram
+  followers) — real-time connecting with people at bars/restaurants (same
+  space); "Bar Seen" iOS app; Seen Arabic social platform; SeenU; Seen
+  Agency (UK restaurant social-media agency); SeenAfter (social network,
+  own trademark); US "SEEN" (Seen Media Group) cancelled 2025. → high risk,
+  don't use alone; keep "Where the scene is seen" as a tagline idea. Scena
+  rejected (three pronunciations). Lesson: short real English words are
+  taken in our space → aim for an invented word (e.g. Skeen) or a
+  distinctive combination.
 - Earlier "quiet club" notes still apply to design (no public likes/counts),
   but the product is more expressive than "quiet".
 
