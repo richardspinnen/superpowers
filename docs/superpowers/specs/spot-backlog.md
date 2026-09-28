@@ -230,6 +230,15 @@ showcase their finds — Spot as "link in bio" for people with taste.
   Criteria confirmed: elegant, cool, catchy, international, easy and certain
   pronunciation, name should say restaurants/bars/going out. Rejected this
   morning: Spood (too playful), Onyx (video-game feel), Tag.
+  - Web check (2026-09-28, not a trademark search): **SUPR** used by Supr
+    Daily (Indian grocery/milk delivery, acquired by Swiggy), "Supr: Camera
+    & Stories Editor" (photo/Stories app), supr (Mexican mobile carrier);
+    similar-sounding Supra (footwear). → medium risk; "SUPR Club" + logo may
+    still work. **SUPA** used by Supaorder (restaurant ordering platform),
+    supa banana (restaurant), Supa / Supa Foods (grocery apps), and "Supa" ≈
+    Supabase in tech → high risk, drop. Next: official search EUIPO eSearch,
+    DPMA, WIPO Global Brand Database, classes 9 and 43; consider a
+    trademark lawyer's search before committing.
 
 ## Partner perks with the Wallet card (2026-09-28)
 
