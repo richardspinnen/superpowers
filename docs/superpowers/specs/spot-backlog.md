@@ -225,6 +225,11 @@ showcase their finds — Spot as "link in bio" for people with taste.
   Richard"), Voisin (neighbour — spot + hood idea), Onyx, Sotto, Clave.
   Idea: "hood" can live inside the app (neighbourhood collection) while the
   brand carries the club vibe.
+- **Favourite names (owner, 2026-09-28): SUPR and SUPA** — from "supper
+  club" (members' dining format), shortened to be catchy and ownable.
+  Criteria confirmed: elegant, cool, catchy, international, easy and certain
+  pronunciation, name should say restaurants/bars/going out. Rejected this
+  morning: Spood (too playful), Onyx (video-game feel), Tag.
 
 ## Partner perks with the Wallet card (2026-09-28)
 
