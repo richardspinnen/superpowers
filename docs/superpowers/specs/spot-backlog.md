@@ -318,6 +318,9 @@ reward (e.g. a free aperitif).
 - Brand kit artifact (built on working name UNDR, name swap needed):
   https://claude.ai/artifact/LnkAiCiWpd72cu1KHCL6Rt ; concept screens:
   https://claude.ai/artifact/4hDLzQoS8Vt7TibTjwpGtD
+- **DECIDED (owner, 2026-09-28): the app is called PRVE.** App renamed in code
+  (commit on richardspinnen/spot main); brand kit:
+  https://claude.ai/artifact/Fa6YuDuDJj1fuqjF2R57ys
 - **Lead name candidate (2026-09-28): PRVE** — as in *privé* (the door of
   the private room). Spelled PRVE everywhere (no accent: typing, handles,
   domains, search); tagline "PRVE. As in privé." DNS screen: prve.co,
