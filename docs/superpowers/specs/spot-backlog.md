@@ -259,6 +259,20 @@ reward (e.g. a free aperitif).
 - Depends on the Wallet card (Plan 4); pilot with 3–5 Oberkassel venues
   during the 20-member test.
 
+## Positioning update: showing off through taste (owner, 2026-09-28)
+
+- "It's like Instagram, but smarter": people join because they want the cool
+  spots and want to show where they are — "I got this reservation", "best
+  truffle pasta ever". A bit of showing off is the engine; FOMO pulls people
+  in. Status through taste and places, not through likes or numbers.
+- Feature implications: 24-hour "I'm here" live posts with a photo; optional
+  "Tonight: a table at …" reservation flex; dish posts that feed Known for;
+  "Discovered by" gains weight.
+- Name direction from this: SEEN ("see and be seen"), SCENE, SPTD
+  ("spotted"), Booked, Plated — top: SEEN, SPTD (availability unchecked).
+- Earlier "quiet club" notes still apply to design (no public likes/counts),
+  but the product is more expressive than "quiet".
+
 ## Ideas inbox
 
 <!-- New ideas from the product owner land here first. -->
