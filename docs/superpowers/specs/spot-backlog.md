@@ -279,6 +279,13 @@ reward (e.g. a free aperitif).
   rejected (three pronunciations). Lesson: short real English words are
   taken in our space → aim for an invented word (e.g. Skeen) or a
   distinctive combination.
+- Web check seen/scene inventions (2026-09-28): **Zeen** — Zeen App
+  "discover the best restaurants, powered by real recommendations from real
+  friends" (= our concept, **competitor to study**), plus Zeeën (nearby
+  people); **Sceno** — photo app with gallery profiles and Explore (close to
+  our VSCO idea); **Skeen** — Skeen.io skincare app, FotoFinder skeen
+  dermatoscope; **Seeno** — several AI companies. → seen/scene family too
+  crowded; drop it. Next: one pre-checked list of ~10 invented names.
 - Earlier "quiet club" notes still apply to design (no public likes/counts),
   but the product is more expressive than "quiet".
 
