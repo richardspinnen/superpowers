@@ -295,6 +295,15 @@ reward (e.g. a free aperitif).
   journal + "social network where you get seen"), Oria (restaurant site
   builder, members café, social club). Homework for owner: name 3–5 brands
   with names they find cool. Next: pre-checked list of ~10 names (evening).
+- Checks (2026-09-28 midday): **Fiko** — FIKO Italian restaurant in
+  Amsterdam Oud-West (own ordering app) + Fiko Gurme restaurant group in
+  Istanbul → high risk. **VIKA** — Vika restaurant (~6.4k IG), Vika's BBQ,
+  Vik Restaurant & Bar (Norway), Vik Restaurants reservation software →
+  medium-high. **UNDR** — undr (UAE fashion resale), Undr (French rap
+  discovery), Undr Construction Fitness, undr.com owned by an app studio;
+  nothing in restaurants / going out → medium risk, **strongest candidate
+  so far**. Next: owner checks EUIPO classes 9 and 43 for UNDR; domains
+  undr.club / undr.co.
 - Earlier "quiet club" notes still apply to design (no public likes/counts),
   but the product is more expressive than "quiet".
 
