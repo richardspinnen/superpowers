@@ -218,6 +218,13 @@ showcase their finds — Spot as "link in bio" for people with taste.
   electronic-music brand), CIRCL (dated, typo risk, existing CIRCL), MEEZ.
 - Backups: Salon, Tavola, Palate; invented words (Myse, Spota, Voya) are
   easier to own.
+- 2026-09-28 morning: owner wants a members'-club / slightly mysterious feel,
+  international, "like a cool modern restaurant in Amsterdam or Munich"; not
+  playful (Spood rejected as too playful). **Keeper: UNDR** ("under the
+  radar", owner likes it). Shortlist: UNDR, Chez (every profile "chez
+  Richard"), Voisin (neighbour — spot + hood idea), Onyx, Sotto, Clave.
+  Idea: "hood" can live inside the app (neighbourhood collection) while the
+  brand carries the club vibe.
 
 ## Partner perks with the Wallet card (2026-09-28)
 
