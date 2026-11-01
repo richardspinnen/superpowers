@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Render</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+import * as THREE from 'three';
+import { Sky } from 'three/addons/objects/Sky.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { buildScene } from './scene.js';
+
+const q = new URLSearchParams(location.search);
+const W = +q.get('w') || 1600, Hh = +q.get('h') || 1067;
+const view = q.get('view') || 'street';
+const interactive = q.has('interactive');
+
+// ---- views: eye, target, hfov, sun (azimuth deg from +x toward -z, elevation deg), mode
+const VIEWS = {
+  street:  { eye: [22.4, 1.62, 9.0], target: [10.2, 3.8, -15.5], hfov: 60, sun: [ -128, 34 ], twoPoint: true },
+  front:   { eye: [11.7, 1.62, 12.8], target: [11.7, 3.9, -12], hfov: 56, sun: [ -115, 38 ], twoPoint: true },
+  garden:  { eye: [20.8, 1.62, -36.5], target: [10.2, 3.5, -20.5], hfov: 64, sun: [ 30, 36 ], twoPoint: true },
+  aerial:  { eye: [-16, 25, 19], target: [11.2, 0.8, -18.2], hfov: 48, sun: [ 160, 40 ], twoPoint: false },
+  dusk:    { eye: [2.4, 1.62, -36.6], target: [12.0, 3.4, -21.5], hfov: 60, sun: [ 75, -3.5 ], twoPoint: true, dusk: true },
+};
+const V = VIEWS[view];
+const dusk = !!V.dusk;
+
+const renderer = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(1);
+renderer.setSize(W, Hh);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = dusk ? 0.95 : 0.82;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+
+const { scene, foliage, M } = buildScene({ dusk });
+if (q.has('clay')) scene.overrideMaterial = new THREE.MeshStandardMaterial({ color: 0xdddddd, roughness: 0.9 });
+if (q.has('nobump')) for (const m of Object.values(M)) if (m && m.bumpMap) { m.bumpMap = null; m.needsUpdate = true; }
+if (q.get('bs')) for (const m of Object.values(M)) if (m && m.bumpMap) { m.bumpScale *= +q.get('bs'); }
+
+// ---- sun & sky
+if (q.get('saz')) V.sun = [+q.get('saz'), +q.get('sel')];
+const az = THREE.MathUtils.degToRad(V.sun[0]), el = THREE.MathUtils.degToRad(V.sun[1]);
+const sunDir = new THREE.Vector3(Math.cos(el) * Math.cos(az), Math.sin(el), -Math.cos(el) * Math.sin(az)).normalize();
+const sky = new Sky(); sky.scale.setScalar(15000);
+const su = sky.material.uniforms;
+su.turbidity.value = dusk ? 3.5 : 4.5; su.rayleigh.value = dusk ? 2.2 : 1.25;
+su.mieCoefficient.value = dusk ? 0.006 : 0.004; su.mieDirectionalG.value = 0.82;
+su.sunPosition.value.copy(sunDir);
+scene.add(sky);
+
+// environment from sky (+ ground hemisphere)
+const pmrem = new THREE.PMREMGenerator(renderer);
+const envScene = new THREE.Scene();
+const sky2 = new Sky(); sky2.scale.setScalar(15000); sky2.material.uniforms = THREE.UniformsUtils.clone(su); envScene.add(sky2);
+const groundEnv = new THREE.Mesh(new THREE.CircleGeometry(12000, 32).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: dusk ? 0x0c0f0c : 0x4d5a3a }));
+groundEnv.position.y = -30; envScene.add(groundEnv);
+const envRT = pmrem.fromScene(envScene, 0.02, 1, 30000);
+scene.environment = envRT.texture;
+scene.environmentIntensity = +(q.get("env") ?? (dusk ? 0.35 : 0.42));
+
+const sun = new THREE.DirectionalLight(dusk ? 0x9fb4ff : 0xfff1dc, +(q.get("sunI") ?? (dusk ? 0.35 : 3.4)));
+const sunTarget = new THREE.Object3D(); sunTarget.position.set(11, 0, -18); scene.add(sunTarget);
+sun.target = sunTarget;
+const sd = dusk ? new THREE.Vector3(-0.4, 0.8, 0.45).normalize() : sunDir;
+sun.position.copy(sunTarget.position).addScaledVector(sd, 120);
+sun.castShadow = true;
+sun.shadow.mapSize.set(+q.get("sm") || 4096, +q.get("sm") || 4096);
+const sc = sun.shadow.camera; sc.left = -40; sc.right = 40; sc.top = 40; sc.bottom = -40; sc.near = 40; sc.far = 220; sc.updateProjectionMatrix();
+sun.shadow.bias = -0.0002; sun.shadow.normalBias = 0.03; sun.shadow.radius = 3;
+scene.add(sun);
+const hemi = new THREE.HemisphereLight(dusk ? 0x3a4a70 : 0xcfe0ff, dusk ? 0x10140e : 0x4a5a38, dusk ? 0.25 : 0.25);
+scene.add(hemi);
+scene.fog = new THREE.FogExp2(dusk ? 0x37415a : 0xb9cbe0, dusk ? 0.00045 : 0.00038);
+
+if (dusk) {
+  // warm exterior lights: downlights under the balconies, garden lights, light-well
+  const add = (x, y, z, i, d = 9, c = 0xffc78a) => { const l = new THREE.PointLight(c, i, d, 2); l.position.set(x, y, z); scene.add(l); };
+  for (const x of [8.2, 11.7, 15.2]) { add(x, 2.85, -26.4, 6); add(x, 2.85, -8.4, 5); }
+  add(5.3, 0.6, -23, 5, 5); add(11.7, 0.5, -4, 2, 5); add(2.5, 2.0, -7.0, 3, 6);
+  for (const [x, z] of [[8, -30.5], [15.5, -30.5], [4.5, -33], [19, -35]]) add(x, 0.45, z, 1.6, 4);
+  const sp = new THREE.SpotLight(0xffd29a, 60, 14, 0.55, 0.8, 2); sp.position.set(3.0, 0.2, -31.0); sp.target.position.set(3.0, 6, -31.5); scene.add(sp, sp.target);
+  const sp2 = new THREE.SpotLight(0xffd29a, 45, 14, 0.55, 0.8, 2); sp2.position.set(19.5, 0.2, -32.5); sp2.target.position.set(19.5, 6, -33); scene.add(sp2, sp2.target);
+}
+
+// ---- camera (two-point perspective via lens shift)
+const camera = new THREE.PerspectiveCamera(45, W / Hh, 0.2, 20000);
+function setCamera() {
+  const eye = new THREE.Vector3(...V.eye), tgt = new THREE.Vector3(...V.target);
+  const aspect = W / Hh;
+  const T = Math.tan(THREE.MathUtils.degToRad(V.hfov) / 2) / aspect; // tan(vfov/2)
+  camera.position.copy(eye);
+  if (!V.twoPoint) {
+    camera.fov = THREE.MathUtils.radToDeg(2 * Math.atan(T)); camera.aspect = aspect;
+    camera.lookAt(tgt); camera.updateProjectionMatrix(); return;
+  }
+  const flat = tgt.clone(); flat.y = eye.y; camera.lookAt(flat);
+  const dh = Math.hypot(tgt.x - eye.x, tgt.z - eye.z);
+  const s = ((tgt.y - eye.y) / dh) / T;           // NDC offset of target
+  const shift = Math.abs(s) * Hh / 2;
+  const fullH = Hh + 2 * shift;
+  camera.fov = THREE.MathUtils.radToDeg(2 * Math.atan(T * fullH / Hh));
+  camera.aspect = W / fullH;
+  camera.setViewOffset(W, fullH, 0, s > 0 ? 0 : 2 * shift, W, Hh);
+  camera.updateProjectionMatrix();
+}
+setCamera();
+
+// ---- post
+const rt = new THREE.WebGLRenderTarget(W, Hh, { type: THREE.HalfFloatType, samples: 4 });
+const composer = new EffectComposer(renderer, rt);
+composer.setPixelRatio(1); composer.setSize(W, Hh);
+composer.addPass(new RenderPass(scene, camera));
+const gtao = new GTAOPass(scene, camera, W, Hh);
+const ov = gtao.overrideVisibility.bind(gtao);
+gtao.overrideVisibility = function () { ov(); for (const f of foliage) f.visible = false; sky.visible = false; };
+gtao.updateGtaoMaterial({ radius: 0.9, distanceExponent: 1.6, thickness: 1.2, scale: 1.0, samples: 16, distanceFallOff: 1.0 });
+gtao.updatePdMaterial({ lumaPhi: 10, depthPhi: 2, normalPhi: 3, radius: 5, rings: 3, samples: 16 });
+gtao.blendIntensity = dusk ? 0.8 : 0.95;
+composer.addPass(gtao);
+if (dusk) composer.addPass(new UnrealBloomPass(new THREE.Vector2(W, Hh), 0.35, 0.6, 0.85));
+composer.addPass(new OutputPass());
+
+if (interactive) {
+  const ctl = new OrbitControls(camera, renderer.domElement);
+  camera.clearViewOffset(); camera.aspect = W / Hh; camera.fov = 50; camera.updateProjectionMatrix();
+  ctl.target.set(11.7, 3, -17.4); ctl.update();
+  (function loop() { requestAnimationFrame(loop); composer.render(); })();
+} else {
+  // warm up (texture uploads/shader compiles), then final frame
+  renderer.compile(scene, camera);
+  if (q.has('nopost')) { renderer.render(scene, camera); renderer.render(scene, camera); } else { composer.render(); composer.render(); }
+  window.__done = true;
+}
+window.__err = null;
+</script>
+<script>window.addEventListener('error', e => { window.__err = String(e.message || e); });</script>
+</body></html>
